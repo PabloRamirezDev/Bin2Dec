@@ -1,0 +1,115 @@
+/*STYLESHEET FOR BINARY TO DECIMAL NUMBER CONVERTER BY PABLO RAMÍREZ*/
+
+/*DECLARING COLOR VARIABLES*/
+
+:root {
+  /*BACKGROUND COLORS*/
+  --main-bg-color: #ba7000;
+  --light-bg-color: #ffb74a;
+  --clear-bg-color: hsla(37, 100%, 76%, 0.8);
+  --very-light-bg-color: #ffeccf;
+  /*TEXT COLORS*/
+  --main-font-color: #1a1104;
+  --light-font-color: #4f3613;
+}
+
+/*GLOBAL PROPERTIES*/
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  background: linear-gradient( 25deg, var(--light-bg-color), var(--main-bg-color));
+  font-size: 82%; /*SET FOR EASY SIZE VALUES USING REM*/
+  height: 100vh;
+  /*FLEX DISPLAY PROPERTIES*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*FOOTER PROPERTIES*/
+
+footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-font-color);
+}
+
+/*MEDIA QUERIES FOR RESPONSIVE DISPLAY*/
+
+@media (max-width: 90em) { /*1440px - Desktops*/
+        html {
+          font-size: 78%;
+        }
+      }
+
+@media (max-width: 70em) { /*1120px - Mini-Laptops*/
+        html {
+          font-size: 74%;
+        }
+      }
+
+
+@media (max-width: 48em) { /*768px - Tablets*/
+        html {
+          font-size: 70%;
+        }
+      }
+
+@media (max-width: 26.5625em) { /*425px - Mobile devices*/
+        html {
+          font-size: 68%;
+        }
+      }
+
+/*HTML CLASSES*/
+
+.container-square {
+  background-color: var(--clear-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  width: 70vw;
+  margin: auto auto;
+  opacity: 0.8;
+  min-width: 300px;
+  padding: 1rem;
+}
+
+.input {
+  font-size: 1.5rem;
+  border: none;
+  background-color: var(--very-light-bg-color);
+  color: var(--light-font-color);
+  padding: 1.5rem 4rem;
+  margin: 1rem;
+  width: 60%;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.icon {
+  font-size: 2rem;
+  opacity: 0.8;
+  color: var(--main-font-color);
+}
+
+/*HTML IDs*/
+
+#main-heading {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--main-font-color);
+}
